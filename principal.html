@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Web - Comedor de Senati</title>
+  
+  <!-- Enlaces a Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Enlaces a Bulma CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+  <!-- Enlace al icono del restaurante -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> <!-- Fuente para títulos -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente para párrafos -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="principal.css">
+
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="principal.html">
+        <img src="IMG/Logo-senati.jpg" alt="Senati" class="logo-senati">
+        <span class="logo-text">SENATI</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="platos.php">
+              <img src="IMG/plato.jpg" alt="plato"> Platos</a>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link" href="#CONTACTO">
+              <img src="IMG/telefono2.jpg" alt="telefono"> Contáctanos</a>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link" href="shop.php">
+              <img src="IMG/navcarro.png" alt="carro"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel (Slider) con Bootstrap -->
+  
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Primera imagen con título y texto -->
+      <div class="carousel-item active">
+        <div class="carousel-image-container">
+          <img src="IMG/comedor-senati1.jpg" class="d-block w-100" alt="Comedor Senati">
+          <div class="carousel-text-overlay">
+            <h3 class="carousel-title">Bienvenidos a Senati</h3>
+            <p class="carousel-description">Disfruta de una experiencia gastronómica única en nuestras instalaciones.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Segunda imagen con título y texto -->
+      <div class="carousel-item">
+        <div class="carousel-image-container">
+          <img src="IMG/Carrusel-Senati2.jpg" class="d-block w-100" alt="Comedor Senati">
+          <div class="carousel-text-overlay">
+            <h3 class="carousel-title">Gastronomía de Calidad</h3>
+            <p class="carousel-description">Nuestros chefs preparan platos frescos y deliciosos con los mejores ingredientes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+   <!-- Sección Platos (con Bulma Cards) -->
+  <section id="platos" class="container my-0">
+    <h3 class="title has-text-centered" style="color: blue;">Nuestros Testimonios</h3>
+    <div class="columns is-multiline">
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="IMG/diego.jpg" class="d-block w-100" alt="Especial 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title is-5 has-text-centered">--Diego Castro--</h3>
+            <p>Elegí SENATI por su calidad académica y su enfoque práctico. Los docentes son expertos en su campo y eso me dio una ventaja competitiva.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="IMG/julian1.jpg" class="d-block w-100" alt="Especial 2">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title is-5 has-text-centered">--Julian Burga--</h3>
+            <p>SENATI me brindó la formación técnica que necesitaba para ingresar rápidamente al mundo laboral. Las prácticas en empresas me dieron la experiencia que buscaba.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="IMG/alejo.jpg" class="d-block w-100" alt="Especial 3">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title is-5 has-text-centered">--Alejandro Soriano--</h3>
+            <p>Estudiar en SENATI me permitió desarrollar habilidades técnicas de alta demanda en el mercado, lo que me abrió muchas puertas en mi carrera.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="porque-nosotros">
+    <h2>¿Por qué el Comedor de SENATI?</h2>
+    <p>El Comedor de SENATI se ha establecido con el objetivo de brindar a nuestros estudiantes, docentes y colaboradores un espacio donde puedan disfrutar de alimentos saludables, balanceados y a precios accesibles. Creemos que una buena alimentación es esencial para el bienestar y rendimiento de la comunidad educativa.</p>
+    <p>En nuestro comedor, nos comprometemos a ofrecer opciones nutritivas, preparadas con ingredientes frescos y de calidad, garantizando un servicio eficiente y amigable. Sabemos que, además de aprender, nuestros estudiantes merecen un lugar donde se sientan cómodos y bien atendidos.</p>
+    <p>¡Te invitamos a conocer nuestro comedor y disfrutar de la mejor comida en un ambiente seguro y cómodo!</p>
+</div>
+
+<footer id="CONTACTO">
+  <!-- Sección de contacto -->
+  <div class="contacto">
+      <h3>Contáctanos</h3>
+      <p><strong>Dirección:</strong> Av, Juan Tomis Stack N° 990, Chiclayo 14011</p>
+      <p><strong>Teléfono:</strong> (074) 202473</p>
+      <p><strong>Horario de atención:</strong> Lunes a Sabado: 12:00 AM - 17:30 PM</p>
+  </div>
+
+  <!-- Sección de redes sociales -->
+  <div class="redes-sociales">
+      <h3>Redes Sociales</h3>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="IMG/facebook2.jpg" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+        <img src="IMG/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.x.com" target="_blank">
+        <img src="IMG/x.png" alt="X">
+    </a>
+  </div>
+
+  <!-- Sección de políticas -->
+  <div class="politicas">
+      <h3>Políticas</h3>
+      <a href="#">Términos & Condiciones</a>
+      <a href="#politica-privacidad">Política de Privacidad</a>
+      <a href="#tratamiento-datos">Política de Tratamiento de Datos</a>
+  </div>
+</footer>
+
+<!-- Texto pequeño del footer -->
+
+<footer class="bg-light text-center py-3">
+  <p>&copy; 2024 Restaurante La Sazón - Todos los derechos reservados</p>
+</footer>
+
+
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

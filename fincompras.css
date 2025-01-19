@@ -1,0 +1,277 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-top: 70px;
+  }
+
+h3 {
+    font-family: 'Playfair Display', serif; /* Cambiar la fuente del título */
+    font-size: 32px; /* Tamaño del título */
+    font-weight: 700; /* Negrita */
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espaciado inferior */
+   }
+
+       /* Estilo para el párrafo */
+p {
+   font-family: 'Lora', serif; /* Cambiar la fuente del párrafo */
+   font-size: 18px; /* Tamaño de la fuente */
+   color: #333333; /* Color gris oscuro */
+   line-height: 1.8; /* Espaciado entre líneas para mayor legibilidad */
+   text-align: justify; /* Justificar el texto */
+   margin: 0 auto; /* Centrar el párrafo */
+   max-width: 800px; /* Limitar el ancho máximo */
+}
+
+/* PARTE DEl NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    display: flex; /* Usamos flexbox para alinear la imagen y el texto */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente si es necesario */
+  }
+  
+  .logo-senati {
+    width: 40px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 8px; /* Añade espacio entre el logo y el texto */
+  }
+  
+  .logo-text {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto si es necesario */
+    color: blue; /* Cambia el color del texto, puedes usar otro color */
+    font-weight: bold; /* Puedes hacer que el texto sea más negrita si lo prefieres */
+  }
+  
+  /* Estilo de los enlaces de la barra de navegación */
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: blue;
+  }
+  
+/* Evitar que el menú colapsable se muestre cuando se hace scroll */
+.navbar-toggler {
+    border: none;
+  }
+
+
+
+
+/* Estilos generales para el contenedor principal */
+.main-content {
+    background-color: #f4f7fb; /* Color de fondo suave para toda la sección */
+    padding: 30px 0;
+}
+
+/* Contenedor de la sección de compra */
+.container-compra {
+    background-color: #ffffff; /* Fondo blanco para resaltar los detalles */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Estilo para el título de la compra */
+.compra-title {
+    font-size: 28px;
+    color: #0066cc; /* Azul oscuro para los títulos */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo para los subtítulos */
+.compra-subtitle {
+    font-size: 20px;
+    color: #004d99; /* Azul intermedio para los subtítulos */
+    font-weight: 600;
+}
+
+/* Estilo para los párrafos con detalles del pedido */
+p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Estilo para la tabla de productos */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f8f9fa; /* Fondo suave para la tabla */
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Estilo para las celdas marcadas (producto y precios) */
+.marcar {
+    font-weight: bold;
+    color: #0066cc; /* Azul para los textos importantes */
+}
+
+.table th {
+    background-color: #0066cc;
+    color: white;
+    font-size: 16px;
+}
+
+.table td {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo para el botón de volver a la tienda */
+.btn-primary {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #004d99; /* Azul más oscuro en hover */
+}
+
+/* Estilos de los mensajes finales */
+h4.compra-title {
+    font-size: 24px;
+    color: #0077cc;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 767px) {
+    .container-compra {
+        padding: 20px;
+    }
+
+    .compra-title {
+        font-size: 24px;
+    }
+
+    .compra-subtitle {
+        font-size: 18px;
+    }
+
+    .table th, .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+    }
+}
+
+
+/* Estilo del footer */
+footer {
+    background-color: #FEF9FF; /* Fondo blanco */
+    color: black; /* Texto negro */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-top: 2px solid #ddd; /* Línea separadora en la parte superior */
+}
+
+/* Sección de contacto (izquierda) */
+.contacto {
+    flex: 1;
+    margin-right: 40px;
+    min-width: 250px;
+}
+
+.contacto h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.contacto p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Sección de redes sociales (centro) */
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales a {
+    margin: 10px;
+    display: inline-block;
+}
+
+.redes-sociales h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.redes-sociales img {
+    width: 40px; /* Ajusta el tamaño de los íconos */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales a:hover img {
+    transform: scale(1.1); /* Efecto hover: aumenta el tamaño */
+}
+
+/* Sección de políticas (derecha) */
+.politicas {
+    flex: 1;
+    text-align: right;
+    min-width: 250px;
+}
+
+.politicas h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+    text-align: center;
+}
+
+.politicas a {
+    font-size: 16px;
+    margin: 5px 0;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.politicas a:hover {
+    color: blue;
+}
